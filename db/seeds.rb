@@ -13,27 +13,32 @@ restaurants_attributes = [
   {
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
-    category:     'japanese'
+    category:     'japanese',
+    phone_number: '+44 123 4567 8910'
   },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
-    category:     'italian'
+    category:     'italian',
+    phone_number: '+44 123 4567 8910'
   },
   {
     name:         'Le Grenouille',
     address:      '5 Poisson St, Paris 11012',
-    category:     'belgian'
+    category:     'belgian',
+    phone_number: '+44 123 4567 8910'
   },
   {
     name:         'L\'escargots',
     address:      '5 Rue de Saint Germain, Paris 12042',
-    category:     'french'
+    category:     'french',
+    phone_number: '+44 123 4567 8910'
   },
   {
     name:         'L\'mal',
     address:      '10 Rue de Saint Germain, Paris 12043',
-    category:     'french'
+    category:     'french',
+    phone_number: '+44 123 4567 8910'
   }
 ]
 Restaurant.create!(restaurants_attributes)

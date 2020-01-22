@@ -1,0 +1,13 @@
+<h1><%= @restaurant.name %> | <%= @restaurant.category %></h1>
+<br>
+<p>You can find <%= @restaurant.name %> at: <%= @restaurant.address %></p>
+<br>
+<p>You can also contact the @restaurant by calling: <%= @restaurant.phone_number %></p>
+<br>
+<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %> | <%= link_to 'Return', restaurants_path %>
+
+<%= @restaurant.reviews %>
+
+
+
+
