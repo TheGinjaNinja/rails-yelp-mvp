@@ -4,10 +4,15 @@
 <br>
 <p>You can also contact the @restaurant by calling: <%= @restaurant.phone_number %></p>
 <br>
+<p>Recent reviews:</p>
+<% @restaurant.reviews.each do |review| %>
+<ul>
+  <li><%= review.content %> | <%= review.rating %></li>
+</ul>
+<% end %>
+
+
 <%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %> | <%= link_to 'Return', restaurants_path %>
-
-<%= @restaurant.reviews %>
-
 
 
 

@@ -18,8 +18,6 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
-    @review = Review.find(params[:id])
-    @review.restaurant = @restaurant
   end
 
   private
